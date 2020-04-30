@@ -1,0 +1,177 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: larger;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: repeat(12,1fr);
+    max-height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    background: #269efa;
+    grid-column: span 12;
+    align-items: center;
+    margin: 0 auto;
+}
+.header .vacuum {
+    flex-grow: 1;
+    background: #269efa;
+}
+.header a {
+    text-decoration: none;
+    display: block;
+}
+.header a:not(.logo) {
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+} 
+.header a:hover {
+    background: #096ab4;
+}
+@media screen and (max-width: 800px) {
+    .header {
+      justify-content: vacuum-around;
+    }
+    .header .vacuum {
+      flex-grow: 0;
+    }
+}
+@media all and (max-width: 600px) {
+    .header {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .header a { 
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .header div:last-of-type a {
+      border-bottom: none;
+    }
+  }
+.picture {
+    display: inline-block;
+    margin: 5px;
+    background: lightgray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.header .picture:hover{
+    box-shadow: 0px 0px 10px 10px gray;
+    cursor: pointer;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    background: #EDEDED;
+    padding-top: 15px;
+    margin-top: 0;
+}
+#this{
+    background: #DCDCDC;
+}
+.menu a {
+    text-decoration: none;
+    display: inline-block; 
+    padding: 5%;
+    color: black;
+}
+.main {
+    grid-column: span 10;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.user img
+{
+    width: 270px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.main .user{
+    display: inline-block;
+    border-radius: 10px;
+    background: #F3F3F3;
+    width: 270px;
+    height: 290px;
+    margin: 10px;
+    text-align: left;
+}
+.main .user .text{
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 10px 7px 10px;
+}
+.main .user a{
+    text-decoration: none;
+    display: inline-block;
+    width: 270px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #DCDCDC;
+    color: black;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center; 
+}
+.main .user .tipe1{
+    color: black;
+    font-size: 16px;
+    padding-left: 7px;
+}
+.main .user .tipe{
+    color: dimgrey;
+    font-size: 10px;
+}
+#another_page{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;   
+    margin-left: auto;
+    margin-right: auto; 
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #37ABFF;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.reference {
+    grid-column: span 12;
+    background: #3C3C3C;
+    font-size: small;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+}
+#signature{
+    margin: 0;
+    padding: 10px;
+    margin-left: 15px;
+    color: white;
+}
+.reference div {
+    margin-right: 15px;
+    margin-left: auto;
+    padding: 10px;
+}
+.reference a{
+    text-decoration: none;
+    color: white;
+}
