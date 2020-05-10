@@ -1,0 +1,21 @@
+{
+  "name": "tensorschool2020",
+  "version": "1.0.0",
+  "description": "My 5 homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flanker72/TensorSchool2020.git"
+  },
+  "author": "Sarycheva Alena",
+  "license": 
+  "bugs": 
+  "homepage": 
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
