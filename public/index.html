@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="module" src="js/app.js" defer></script>
+        <title>Tensor School</title>
+        <link rel="stylesheet" href="css/File.css">
+<!--       <script src="js/script.js"></script>     -->
+
+        <script src="js/personLib.js"></script>
+        <script src="js/school.js"></script>
+    </head>
+    <!--<body onload="input();" >-->
+    <body >
+        <header> 
+            <img id="globl" src="img/logo.jpg" alt="Это страница компании Tensor School">
+            <span title="Tensor School"> TENSOR SCHOOL </span>
+            <div id="us"><p> Это страница школы Тензор в городе Калининград. Тут вы можете познакомиться в нашими учениками и посмотреть темы занятий. </p></div>
+            <div id="imguch"></div>
+        </header>
+        <main> 
+            <script>
+                const studentArr = [ 
+                { 
+                    fullName: 'Кирилл Жилинский',
+                    type: 'student', 
+                    university: 'БФУ', 
+                    course: 2, 
+                    birthDate: new Date(2000, 4, 10), 
+                    photoUrl: '/img/ava01.jpg' 
+                }, 
+                { 
+                    fullName: 'Анастасия Калинина',
+                    type: 'student', 
+                    university: 'БФУ', 
+                    course: 3, 
+                    birthDate: new Date(2000, 1, 1), 
+                    photoUrl: '/img/ava02.jpg' 
+                }, 
+                { 
+                    fullName: 'Алена Сарычева',
+                    type: 'student', 
+                    university: 'БФУ', 
+                    course: 4, 
+                    birthDate: new Date(2000, 8, 11), 
+                    photoUrl: '/img/ava03.jpg' 
+                }, 
+                ];
+            
+                let cardCont = document.getElementsByTagName("main")[0];
+            /* обратить внимание на Person и Student*/
+                studentArr.forEach(function(item) {
+                    let student = new Student(item);
+                /*renderCand*/student.appendToDom(student.renderCard, cardCont);
+                });
+            </script> 
+        </main>
+    </body>
+</html>
