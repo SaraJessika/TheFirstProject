@@ -1,0 +1,23 @@
+{
+  "name": "tensorschool2020",
+  "version": "1.0.0",
+  "description": "My six homework",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraJessika/TheFirstProject"
+  },
+  "author": "Sarycheva Alena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraJessika/TheFirstProject/issues"
+  },
+  "homepage": "https://github.com/SaraJessika/TheFirstProject/tree/master",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
