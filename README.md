@@ -1,2 +1,2 @@
-# TheFirstProject
-Мой первый проект
+#Сайт
+Написан на Java Script
